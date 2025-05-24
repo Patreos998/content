@@ -1,5 +1,6 @@
 ---
-title: "CSP: object-src"
+title: "Content-Security-Policy: object-src directive"
+short-title: object-src
 slug: Web/HTTP/Reference/Headers/Content-Security-Policy/object-src
 page-type: http-csp-directive
 browser-compat: http.headers.Content-Security-Policy.object-src
@@ -70,7 +71,7 @@ Content-Security-Policy: object-src https://example.com/
 The following {{HTMLElement("object")}} and {{HTMLElement("embed")}} elements are blocked and won't load:
 
 ```html
-<embed src="https://not-example.com/flash"></embed>
+<embed src="https://not-example.com/flash" />
 <object data="https://not-example.com/plugin"></object>
 ```
 

@@ -2,9 +2,8 @@
 title: Responsive design
 slug: Learn_web_development/Core/CSS_layout/Responsive_Design
 page-type: learn-module-chapter
+sidebar: learnsidebar
 ---
-
-{{learnsidebar}}
 
 {{PreviousMenuNext("Learn_web_development/Core/CSS_layout/Grids", "Learn_web_development/Core/CSS_layout/Media_queries", "Learn_web_development/Core/CSS_layout")}}
 
@@ -94,6 +93,9 @@ If using breakpoints, best practices encourage defining media query breakpoints 
 There are different approaches to the styles defined within a media query block; ranging from using media queries to {{htmlelement("link")}} style sheets based on browser size ranges to only including custom properties variables to store values associated with each breakpoint.
 
 Media queries can help with RWD, but are not a requirement. Flexible grids, relative units, and minimum and maximum unit values can be used without media queries.
+
+> [!NOTE]
+> Scrimba has a tutorial called [Aside: Media queries](https://scrimba.com/frontend-path-c0j/~0j3?via=mdn) <sup>[_MDN learning partner_](/en-US/docs/MDN/Writing_guidelines/Learning_content#partner_links_and_embeds)</sup>, which provides an interactive introduction to media queries plus a challenge to test that you understand the basics.
 
 ## Responsive layout technologies
 
@@ -270,7 +272,7 @@ video {
 This scales media to ensure they never overflow their containers.
 
 > [!NOTE]
-> Using a single large image and scaling it down to fit small devices wastes bandwidth by downloading images larger than required. It can also look bad — a landscape image for example might look good on a widescreen monitor, but it might be hard to see on a mobile device, which would suit a portrait image better. Such problems can be solved using the {{htmlelement("picture")}} element and the {{htmlelement("img")}} `srcset` and `sizes` attributes. These are advanced features that are beyond the scope of this course, but you can find a detailed guide at [Responsive images](/en-US/docs/Web/HTML/Responsive_images).
+> Using a single large image and scaling it down to fit small devices wastes bandwidth by downloading images larger than required. It can also look bad — a landscape image for example might look good on a widescreen monitor, but it might be hard to see on a mobile device, which would suit a portrait image better. Such problems can be solved using the {{htmlelement("picture")}} element and the {{htmlelement("img")}} `srcset` and `sizes` attributes. These are advanced features that are beyond the scope of this course, but you can find a detailed guide at [Responsive images](/en-US/docs/Web/HTML/Guides/Responsive_images).
 
 Other useful tips:
 
@@ -465,7 +467,7 @@ If you look at the HTML source of a responsive page, you will usually see the fo
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 ```
 
-This [viewport](/en-US/docs/Web/HTML/Viewport_meta_tag) meta tag tells mobile browsers that they should set the width of the viewport to the device width, and scale the document to 100% of its intended size, which shows the document at the mobile-optimized size that you intended.
+This [viewport](/en-US/docs/Web/HTML/Guides/Viewport_meta_element) meta tag tells mobile browsers that they should set the width of the viewport to the device width, and scale the document to 100% of its intended size, which shows the document at the mobile-optimized size that you intended.
 
 Why is this needed? Because mobile browsers tend to lie about their viewport width.
 
@@ -489,5 +491,6 @@ Next, we will study media queries in more detail and show how to use them to sol
   - [Touch events](/en-US/docs/Web/API/Touch_events) provide the ability to interpret finger (or stylus) activity on touch screens or trackpads, enabling quality support for complex touch-based user interfaces.
   - Use the [pointer](/en-US/docs/Web/CSS/@media/pointer) or [any-pointer](/en-US/docs/Web/CSS/@media/any-pointer) media queries to load different CSS on touch-enabled devices.
 - [CSS-Tricks guide to media queries](https://css-tricks.com/a-complete-guide-to-css-media-queries/)
+- [The Frontend Developer Career Path](https://scrimba.com/the-frontend-developer-career-path-c0j?via=mdn) <sup>[_MDN learning partner_](/en-US/docs/MDN/Writing_guidelines/Learning_content#partner_links_and_embeds)</sup> from Scrimba teaches all you need to know to be a competent front-end web developer, with fun interactive lessons and challenges, knowledgeable teachers, and a supportive community. Go from zero to landing your first front-end job! Many of the course components are available as standalone free versions. This includes a module on responsive design.
 
 {{PreviousMenuNext("Learn_web_development/Core/CSS_layout/Grids", "Learn_web_development/Core/CSS_layout/Media_queries", "Learn_web_development/Core/CSS_layout")}}

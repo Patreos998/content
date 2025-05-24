@@ -2,9 +2,10 @@
 title: Rendering a list of Vue components
 slug: Learn_web_development/Core/Frameworks_libraries/Vue_rendering_lists
 page-type: learn-module-chapter
+sidebar: learnsidebar
 ---
 
-{{LearnSidebar}}{{PreviousMenuNext("Learn_web_development/Core/Frameworks_libraries/Vue_first_component","Learn_web_development/Core/Frameworks_libraries/Vue_methods_events_models", "Learn_web_development/Core/Frameworks_libraries")}}
+{{PreviousMenuNext("Learn_web_development/Core/Frameworks_libraries/Vue_first_component","Learn_web_development/Core/Frameworks_libraries/Vue_methods_events_models", "Learn_web_development/Core/Frameworks_libraries")}}
 
 At this point we've got a fully working component; we're now ready to add multiple `ToDoItem` components to our app. In this article we'll look at adding a set of todo item data to our `App.vue` component, which we'll then loop through and display inside `ToDoItem` components using the `v-for` directive.
 
@@ -92,8 +93,8 @@ To make sure that Vue can accurately compare the `key` attributes, they need to 
    The `<script>` element in `App.vue` should now have the following contents:
 
    ```js
-   import ToDoItem from "./components/ToDoItem.vue";
    import { nanoid } from "nanoid";
+   import ToDoItem from "./components/ToDoItem.vue";
 
    export default {
      name: "app",

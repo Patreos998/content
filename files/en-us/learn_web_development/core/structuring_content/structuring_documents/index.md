@@ -2,9 +2,8 @@
 title: Structuring documents
 slug: Learn_web_development/Core/Structuring_content/Structuring_documents
 page-type: tutorial-chapter
+sidebar: learnsidebar
 ---
-
-{{LearnSidebar}}
 
 {{PreviousMenuNext("Learn_web_development/Core/Structuring_content/Lists", "Learn_web_development/Core/Structuring_content/Advanced_text_features", "Learn_web_development/Core/Structuring_content")}}
 
@@ -196,7 +195,7 @@ Take some time to look over the code and understand it — the comments inside t
 
 ## HTML layout elements in more detail
 
-It's good to understand the overall meaning of all the HTML sectioning elements in detail — this is something you'll work on gradually as you start to get more experience with web development. You can find a lot of detail by reading our [HTML element reference](/en-US/docs/Web/HTML/Element). For now, these are the main definitions that you should try to understand:
+It's good to understand the overall meaning of all the HTML sectioning elements in detail — this is something you'll work on gradually as you start to get more experience with web development. You can find a lot of detail by reading our [HTML element reference](/en-US/docs/Web/HTML/Reference/Elements). For now, these are the main definitions that you should try to understand:
 
 - {{HTMLElement('main')}} is for content _unique to this page._ Use `<main>` only _once_ per page, and put it directly inside {{HTMLElement('body')}}. Ideally this shouldn't be nested within other elements.
 - {{HTMLElement('article')}} encloses a block of related content that makes sense on its own without the rest of the page (e.g., a single blog post).
@@ -210,7 +209,7 @@ Each of the aforementioned elements can be clicked on to read the corresponding 
 
 ### Non-semantic wrappers
 
-Sometimes you'll come across a situation where you can't find an ideal semantic element to group some items together or wrap some content. Sometimes you might want to just group a set of elements together to affect them all as a single entity with some {{glossary("CSS")}} or {{glossary("JavaScript")}}. For cases like these, HTML provides the {{HTMLElement("div")}} and {{HTMLElement("span")}} elements. You should use these preferably with a suitable [`class`](/en-US/docs/Web/HTML/Global_attributes/class) attribute, to provide some kind of label for them so they can be easily targeted.
+Sometimes you'll come across a situation where you can't find an ideal semantic element to group some items together or wrap some content. Sometimes you might want to just group a set of elements together to affect them all as a single entity with some {{glossary("CSS")}} or {{glossary("JavaScript")}}. For cases like these, HTML provides the {{HTMLElement("div")}} and {{HTMLElement("span")}} elements. You should use these preferably with a suitable [`class`](/en-US/docs/Web/HTML/Reference/Global_attributes/class) attribute, to provide some kind of label for them so they can be easily targeted.
 
 {{HTMLElement("span")}} is an inline non-semantic element, which you should only use if you can't think of a better semantic text element to wrap your content, or don't want to add any specific meaning. For example:
 
@@ -248,6 +247,12 @@ This isn't really an `<aside>`, as it doesn't necessarily relate to the main con
 
 > [!WARNING]
 > Divs are so convenient to use that it's easy to use them too much. As they carry no semantic value, they just clutter your HTML code. Take care to use them only when there is no better semantic solution and try to reduce their usage to the minimum otherwise you'll have a hard time updating and maintaining your documents.
+
+> [!CALLOUT]
+>
+> **Try it out**
+>
+> Scrimba's [Semantic HTML](https://scrimba.com/learn-accessible-web-design-c031/~0b?via=mdn) <sup>[_MDN learning partner_](/en-US/docs/MDN/Writing_guidelines/Learning_content#partner_links_and_embeds)</sup> interactive tutorial provides a useful recap of semantic markup and why you should use it, plus a challenge that tests your ability to improve an HTML codebase with semantic elements.
 
 ### Line breaks and horizontal rules
 

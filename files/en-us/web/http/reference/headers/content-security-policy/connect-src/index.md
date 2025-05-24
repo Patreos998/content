@@ -1,5 +1,6 @@
 ---
-title: "CSP: connect-src"
+title: "Content-Security-Policy: connect-src directive"
+short-title: connect-src
 slug: Web/HTTP/Reference/Headers/Content-Security-Policy/connect-src
 page-type: http-csp-directive
 browser-compat: http.headers.Content-Security-Policy.connect-src
@@ -11,8 +12,9 @@ The HTTP {{HTTPHeader("Content-Security-Policy")}} (CSP)
 **`connect-src`** directive restricts the URLs which can be
 loaded using script interfaces. The following APIs are controlled by this directive:
 
-- The [`ping`](/en-US/docs/Web/HTML/Element/a#ping) attribute in {{htmlelement("a")}} elements
+- The [`ping`](/en-US/docs/Web/HTML/Reference/Elements/a#ping) attribute in {{htmlelement("a")}} elements
 - {{domxref("Window/fetch", "fetch()")}}
+- {{domxref("Window/fetchLater", "fetchLater()")}} {{experimental_inline}}
 - {{domxref("XMLHttpRequest")}}
 - {{domxref("WebSocket")}}
 - {{domxref("EventSource")}}
@@ -103,7 +105,7 @@ The following connections are blocked and won't load:
 ## See also
 
 - {{HTTPHeader("Content-Security-Policy")}}
-- {{HTMLElement("a")}} [`ping`](/en-US/docs/Web/HTML/Element/a#ping)
+- {{HTMLElement("a")}} [`ping`](/en-US/docs/Web/HTML/Reference/Elements/a#ping)
 - {{domxref("Window/fetch", "fetch()")}}
 - {{domxref("XMLHttpRequest")}}
 - {{domxref("WebSocket")}}

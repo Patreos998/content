@@ -2,9 +2,8 @@
 title: What is JavaScript?
 slug: Learn_web_development/Core/Scripting/What_is_JavaScript
 page-type: learn-module-chapter
+sidebar: learnsidebar
 ---
-
-{{LearnSidebar}}
 
 {{NextMenu("Learn_web_development/Core/Scripting/A_first_splash", "Learn_web_development/Core/Scripting")}}
 
@@ -88,6 +87,9 @@ Try clicking on the text label to see what happens.
 {{EmbedLiveSample('string-concat-name', , '80', , , , , 'allow-modals')}}
 
 JavaScript can do a lot more than that — let's explore what in more detail.
+
+> [!NOTE]
+> Before moving on, why not jump in and get your hands dirty with a challenge from Scrimba at this early stage? Check out [Render a welcome message](https://scrimba.com/learn-javascript-c0v/~0n?via=mdn) <sup>[_MDN learning partner_](/en-US/docs/MDN/Writing_guidelines/Learning_content#partner_links_and_embeds)</sup>. If you don't know how to write this code, don't worry at all; you could try doing some web searches to find some answers, or view the solution at the end of the scrim.
 
 ## So what can it really do?
 
@@ -210,6 +212,9 @@ A web page with no dynamically updating content is referred to as **static** —
 
 JavaScript is applied to your HTML page in a similar manner to CSS.
 Whereas CSS uses {{htmlelement("link")}} elements to apply external stylesheets and {{htmlelement("style")}} elements to apply internal stylesheets to HTML, JavaScript only needs one friend in the world of HTML — the {{htmlelement("script")}} element. Let's learn how this works.
+
+> [!NOTE]
+> Scrimba's [Setting up our JavaScript file](https://scrimba.com/learn-javascript-c0v/~03?via=mdn) <sup>[_MDN learning partner_](/en-US/docs/MDN/Writing_guidelines/Learning_content#partner_links_and_embeds)</sup> interactive tutorial walks through a couple of different ways to add JavaScript to your HTML.
 
 ### Internal JavaScript
 

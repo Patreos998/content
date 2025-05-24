@@ -2,9 +2,8 @@
 title: Create Author form
 slug: Learn_web_development/Extensions/Server-side/Express_Nodejs/forms/Create_author_form
 page-type: learn-module-chapter
+sidebar: learnsidebar
 ---
-
-{{LearnSidebar}}
 
 This subarticle shows how to define a page for creating `Author` objects.
 
@@ -81,14 +80,13 @@ exports.author_create_post = [
         errors: errors.array(),
       });
       return;
-    } else {
-      // Data from form is valid.
-
-      // Save author.
-      await author.save();
-      // Redirect to new author record.
-      res.redirect(author.url);
     }
+    // Data from form is valid.
+
+    // Save author.
+    await author.save();
+    // Redirect to new author record.
+    res.redirect(author.url);
   }),
 ];
 ```

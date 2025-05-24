@@ -3,9 +3,8 @@ title: "Express Tutorial Part 2: Creating a skeleton website"
 short-title: "2: Skeleton website"
 slug: Learn_web_development/Extensions/Server-side/Express_Nodejs/skeleton_website
 page-type: learn-module-chapter
+sidebar: learnsidebar
 ---
-
-{{LearnSidebar}}
 
 {{PreviousMenuNext("Learn_web_development/Extensions/Server-side/Express_Nodejs/Tutorial_local_library_website", "Learn_web_development/Extensions/Server-side/Express_Nodejs/mongoose", "Learn_web_development/Extensions/Server-side/Express_Nodejs")}}
 
@@ -440,6 +439,7 @@ This file creates an `express` application object (named `app`, by convention), 
 
 ```js
 const express = require("express");
+
 const app = express();
 // …
 module.exports = app;
@@ -535,6 +535,7 @@ Then it specifies a route on that object and lastly exports the router from the 
 
 ```js
 const express = require("express");
+
 const router = express.Router();
 
 /* GET users listing. */

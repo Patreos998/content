@@ -2,9 +2,8 @@
 title: Delete Author form
 slug: Learn_web_development/Extensions/Server-side/Express_Nodejs/forms/Delete_author_form
 page-type: learn-module-chapter
+sidebar: learnsidebar
 ---
-
-{{LearnSidebar}}
 
 This subarticle shows how to define a page to delete `Author` objects.
 
@@ -74,11 +73,10 @@ exports.author_delete_post = asyncHandler(async (req, res, next) => {
       author_books: allBooksByAuthor,
     });
     return;
-  } else {
-    // Author has no books. Delete object and redirect to the list of authors.
-    await Author.findByIdAndDelete(req.body.authorid);
-    res.redirect("/catalog/authors");
   }
+  // Author has no books. Delete object and redirect to the list of authors.
+  await Author.findByIdAndDelete(req.body.authorid);
+  res.redirect("/catalog/authors");
 });
 ```
 
